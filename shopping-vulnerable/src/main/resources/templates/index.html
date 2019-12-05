@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>脆弱なショッピングサイト</title>
+</head>
+<body>
+    <h1>脆弱なショッピングサイト</h1>
+
+    <form th:action="@{post}" method="post">
+        <input type="text" name="param" value="脆弱なサイトからのパラメーター">
+        <input type="submit" value="送信">
+    </form>
+</body>
+</html>
